@@ -1,0 +1,116 @@
+body {
+    font-family: 'Varta', sans-serif;
+    font-weight: 600;
+}
+
+.mainPage {
+    display: grid;
+    grid-template-columns: 130px auto 160px;
+    grid-template-rows: 80px 25px auto;
+    grid-template-areas: "trlogo header clientlogo" "header-footer header-footer header-footer" "content content content";
+    gap: 6px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 99%;
+}
+
+.tr-logo {
+    grid-area: trlogo;
+}
+
+.tr-logo img {
+    height: 100%;
+    background-size: cover;
+}
+
+.header {
+    grid-area: header;
+}
+
+.header h6 {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-top: 3px;
+}
+
+.client-logo {
+    grid-area: clientlogo;
+}
+
+.client-logo img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.header-footer {
+    grid-area: header-footer;
+    width: 100%;
+    background-color: rgb(92, 125, 156);
+}
+
+.header-footer h6 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: small;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.content img {
+    width: 100%;
+    background-size: cover;
+}
+
+.summary1 {
+    grid-area: summary1;
+}
+
+.summary2 {
+    grid-area: summary2;
+}
+
+#table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td,
+#table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(51, 63, 79);
+    color: white;
+}
+
+.rowTotal {
+    background-color: rgb(51, 63, 79);
+    color: white;
+    text-align: center;
+}

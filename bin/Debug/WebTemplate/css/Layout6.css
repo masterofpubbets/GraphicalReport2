@@ -1,0 +1,110 @@
+body {
+    font-family: 'Varta', sans-serif;
+    font-weight: 600;
+}
+
+.mainPage {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 80px 25px auto auto;
+    grid-template-areas: "header header header" "header-footer header-footer header-footer" "content content content" "photo1 photo2 summary1";
+    gap: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 99%;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(92, 125, 156);
+}
+
+.header h6 {
+    text-align: center;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-top: 3px;
+}
+
+.header-footer {
+    grid-area: header-footer;
+    width: 100%;
+    background-color: rgb(92, 125, 156);
+}
+
+.header-footer h6 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: small;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.content img {
+    width: 100%;
+    background-size: cover;
+}
+
+.summary1 {
+    grid-area: summary1;
+}
+
+.photo1 {
+    grid-area: photo1;
+}
+
+.photo1 img {
+    width: 100%;
+    background-size: cover;
+}
+
+.photo2 {
+    grid-area: photo2;
+}
+
+.photo2 img {
+    width: 100%;
+    background-size: cover;
+}
+
+#table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td,
+#table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(92, 125, 156);
+    color: white;
+}
+
+.rowTotal {
+    background-color: rgb(92, 125, 156);
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{157FCDC6-7D3E-4474-B7F3-ECABC32988D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GraphicalReport.My.MyApplication</StartupObject>
+    <RootNamespace>GraphicalReport</RootNamespace>
+    <AssemblyName>GraphicalReport</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GraphicalReport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GraphicalReport.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>graphicalReportIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.1.Drawing, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=20.4460.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Compression.Base.20.4.0.49\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Portable, Version=20.4200.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Compression.Net.Core.20.4.0.49\lib\netstandard2.0\Syncfusion.Compression.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.HtmlConverter.Portable, Version=20.4200.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.HtmlToPdfConverter.Net.Windows.20.4.0.49\lib\netstandard2.0\Syncfusion.HtmlConverter.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=20.4460.0.49, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Licensing.20.4.0.49\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Portable, Version=20.4200.0.49, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Pdf.Net.Core.20.4.0.49\lib\netstandard2.0\Syncfusion.Pdf.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encoding.CodePages.4.4.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Comps\Connections.vb" />
+    <Compile Include="Classes\Comps\DrawingSets.vb" />
+    <Compile Include="Classes\Comps\Errors.vb" />
+    <Compile Include="Classes\Comps\GridViews.vb" />
+    <Compile Include="Classes\GenerateCutoffDate.vb" />
+    <Compile Include="Classes\GenerateGraphicalReport.vb" />
+    <Compile Include="Classes\GenerateHtml.vb" />
+    <Compile Include="Classes\GenerateHtmlHeader.vb" />
+    <Compile Include="Classes\GenerateHtmlLegend.vb" />
+    <Compile Include="Classes\GenerateHtmlTable.vb" />
+    <Compile Include="Classes\GeneratePdf.vb" />
+    <Compile Include="Classes\GetDataTable.vb" />
+    <Compile Include="Classes\GraphicalReport.vb" />
+    <Compile Include="Classes\GraphicalReport2.vb" />
+    <Compile Include="Classes\svgGroups.vb" />
+    <Compile Include="Classes\Tooles.vb" />
+    <Compile Include="Forms\Colors\frmAddStatus.Designer.vb">
+      <DependentUpon>frmAddStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Colors\frmAddStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Colors\frmStatus.Designer.vb">
+      <DependentUpon>frmStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Colors\frmStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Components\frmCreateQuery.Designer.vb">
+      <DependentUpon>frmCreateQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Components\frmCreateQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connections\frmConns.Designer.vb">
+      <DependentUpon>frmConns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Connections\frmConns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connections\frmCreateConnection.Designer.vb">
+      <DependentUpon>frmCreateConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Connections\frmCreateConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connections\frmSelectConns.Designer.vb">
+      <DependentUpon>frmSelectConns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Connections\frmSelectConns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectCutoffDate.Designer.vb">
+      <DependentUpon>frmSelectCutoffDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectCutoffDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectDrawingHeader.Designer.vb">
+      <DependentUpon>frmSelectDrawingHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectDrawingHeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectLayout.Designer.vb">
+      <DependentUpon>frmSelectLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectSubheader.Designer.vb">
+      <DependentUpon>frmSelectSubheader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Layouts\frmSelectSubheader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Queries\frmQueryCheck.Designer.vb">
+      <DependentUpon>frmQueryCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Queries\frmQueryCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Queries\frmQueryError.Designer.vb">
+      <DependentUpon>frmQueryError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Queries\frmQueryError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Queries\frmQueryResults.Designer.vb">
+      <DependentUpon>frmQueryResults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Queries\frmQueryResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sets\frmAddSet.Designer.vb">
+      <DependentUpon>frmAddSet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sets\frmAddSet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sets\frmGenerateLayout.Designer.vb">
+      <DependentUpon>frmGenerateLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sets\frmGenerateLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sets\frmNewSetName.Designer.vb">
+      <DependentUpon>frmNewSetName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sets\frmNewSetName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sets\frmPdfExported.Designer.vb">
+      <DependentUpon>frmPdfExported.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sets\frmPdfExported.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sets\frmSets.Designer.vb">
+      <DependentUpon>frmSets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sets\frmSets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\mMain.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Colors\frmAddStatus.resx">
+      <DependentUpon>frmAddStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Colors\frmStatus.resx">
+      <DependentUpon>frmStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Components\frmCreateQuery.resx">
+      <DependentUpon>frmCreateQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connections\frmConns.resx">
+      <DependentUpon>frmConns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connections\frmCreateConnection.resx">
+      <DependentUpon>frmCreateConnection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connections\frmSelectConns.resx">
+      <DependentUpon>frmSelectConns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Layouts\frmSelectCutoffDate.resx">
+      <DependentUpon>frmSelectCutoffDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Layouts\frmSelectDrawingHeader.resx">
+      <DependentUpon>frmSelectDrawingHeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Layouts\frmSelectLayout.resx">
+      <DependentUpon>frmSelectLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Layouts\frmSelectSubheader.resx">
+      <DependentUpon>frmSelectSubheader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Queries\frmQueryCheck.resx">
+      <DependentUpon>frmQueryCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Queries\frmQueryError.resx">
+      <DependentUpon>frmQueryError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Queries\frmQueryResults.resx">
+      <DependentUpon>frmQueryResults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sets\frmAddSet.resx">
+      <DependentUpon>frmAddSet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sets\frmGenerateLayout.resx">
+      <DependentUpon>frmGenerateLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sets\frmNewSetName.resx">
+      <DependentUpon>frmNewSetName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sets\frmPdfExported.resx">
+      <DependentUpon>frmPdfExported.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sets\frmSets.resx">
+      <DependentUpon>frmSets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Apps-inkscape-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nitropdf-175.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appicon_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat12_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pattern\pat18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="graphicalReportIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets'))" />
+    <Error Condition="!Exists('packages\Syncfusion.HtmlToPdfConverter.Net.Windows.20.4.0.49\build\netstandard20\Syncfusion.HtmlToPdfConverter.Net.Windows.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Syncfusion.HtmlToPdfConverter.Net.Windows.20.4.0.49\build\netstandard20\Syncfusion.HtmlToPdfConverter.Net.Windows.targets'))" />
+  </Target>
+  <Import Project="packages\Syncfusion.HtmlToPdfConverter.Net.Windows.20.4.0.49\build\netstandard20\Syncfusion.HtmlToPdfConverter.Net.Windows.targets" Condition="Exists('packages\Syncfusion.HtmlToPdfConverter.Net.Windows.20.4.0.49\build\netstandard20\Syncfusion.HtmlToPdfConverter.Net.Windows.targets')" />
+</Project>
